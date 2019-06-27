@@ -1,0 +1,5 @@
+# python
+*.py[cod]
+*.log
+*.tmp
+*.swp

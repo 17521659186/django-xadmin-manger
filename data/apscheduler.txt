@@ -1,0 +1,63 @@
+2019-02-18 14:52:18 base.py[line:436] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-02-18 14:52:18 base.py[line:878] INFO Added job "robot_proposes" to job store "default"
+2019-02-18 14:52:18 base.py[line:162] INFO Scheduler started
+2019-02-18 14:57:08 base.py[line:436] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-02-18 14:57:08 base.py[line:878] INFO Added job "robot_proposes" to job store "default"
+2019-02-18 14:57:08 base.py[line:162] INFO Scheduler started
+2019-02-18 14:58:04 base.py[line:436] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-02-18 14:58:04 base.py[line:878] INFO Added job "robot_proposes" to job store "default"
+2019-02-18 14:58:04 base.py[line:162] INFO Scheduler started
+2019-02-18 14:58:20 base.py[line:436] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-02-18 14:58:20 base.py[line:878] INFO Added job "robot_proposes" to job store "default"
+2019-02-18 14:58:20 base.py[line:162] INFO Scheduler started
+2019-02-18 14:59:00 base.py[line:123] INFO Running job "robot_proposes (trigger: cron[hour='14', minute='59'], next run at: 2019-02-18 14:59:00 CST)" (scheduled at 2019-02-18 14:59:00+08:00)
+2019-02-18 14:59:16 base.py[line:144] INFO Job "robot_proposes (trigger: cron[hour='14', minute='59'], next run at: 2019-02-19 14:59:00 CST)" executed successfully
+2019-02-18 15:02:48 base.py[line:436] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-02-18 15:02:48 base.py[line:878] INFO Added job "robot_proposes" to job store "default"
+2019-02-18 15:02:48 base.py[line:162] INFO Scheduler started
+2019-02-18 15:03:12 base.py[line:436] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-02-18 15:03:12 base.py[line:878] INFO Added job "robot_proposes" to job store "default"
+2019-02-18 15:03:12 base.py[line:162] INFO Scheduler started
+2019-02-18 15:04:00 base.py[line:123] INFO Running job "robot_proposes (trigger: cron[hour='15', minute='4'], next run at: 2019-02-18 15:04:00 CST)" (scheduled at 2019-02-18 15:04:00+08:00)
+2019-02-18 15:04:05 base.py[line:131] ERROR Job "robot_proposes (trigger: cron[hour='15', minute='4'], next run at: 2019-02-19 15:04:00 CST)" raised an exception
+Traceback (most recent call last):
+  File "C:\Python3\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\AliyunProjectTest\data\apps\recommendations\utils.py", line 206, in robot_proposes
+    logging.DEBUG("ok")
+TypeError: 'int' object is not callable
+2019-02-18 15:04:09 basehttp.py[line:124] INFO "GET /recommendations/histories HTTP/1.1" 200 5925
+2019-02-18 15:06:18 base.py[line:436] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-02-18 15:06:18 base.py[line:878] INFO Added job "robot_proposes" to job store "default"
+2019-02-18 15:06:18 base.py[line:162] INFO Scheduler started
+2019-02-18 15:06:35 basehttp.py[line:124] INFO "GET /recommendations/detail HTTP/1.1" 200 16
+2019-02-18 15:06:36 basehttp.py[line:124] INFO "GET /recommendations/program?startTime=2019-02-18%2000:00:36&endTime=2019-02-18%2015:06:36 HTTP/1.1" 200 5081
+2019-02-18 15:09:10 basehttp.py[line:124] INFO "GET /users/csrf HTTP/1.1" 200 16
+2019-02-18 15:09:18 basehttp.py[line:124] INFO "GET /users/csrf HTTP/1.1" 200 16
+2019-02-18 15:12:48 basehttp.py[line:124] INFO "OPTIONS /performances/program HTTP/1.1" 200 0
+2019-02-18 15:12:50 basehttp.py[line:124] INFO "POST /performances/program HTTP/1.1" 200 382
+2019-02-18 15:12:57 basehttp.py[line:124] INFO "POST /performances/program HTTP/1.1" 200 382
+2019-02-18 15:14:42 basehttp.py[line:124] INFO "GET /recommendations/histories HTTP/1.1" 200 5925
+2019-02-18 15:14:44 basehttp.py[line:124] INFO "GET /recommendations/match?startTime=2019-02-18%2011:00:45&endTime=2019-02-20%2011:00:45&company_name=average HTTP/1.1" 200 6457
+2019-02-18 15:14:45 basehttp.py[line:124] INFO "GET /recommendations/histories HTTP/1.1" 200 5925
+2019-02-18 15:14:54 basehttp.py[line:124] INFO "GET /recommendations/histories HTTP/1.1" 200 5925
+2019-02-18 15:15:37 basehttp.py[line:124] INFO "GET /recommendations/histories HTTP/1.1" 200 5925
+2019-02-18 15:15:41 basehttp.py[line:124] INFO "GET /recommendations/histories HTTP/1.1" 200 5925
+2019-02-18 15:16:12 basehttp.py[line:124] INFO "GET /recommendations/match?startTime=2019-02-18%2011:00:12&endTime=2019-02-20%2011:00:12&company_name=average HTTP/1.1" 200 6457
+2019-02-18 15:16:12 basehttp.py[line:124] INFO "GET /recommendations/histories HTTP/1.1" 200 5925
+2019-02-18 15:16:15 basehttp.py[line:124] INFO "GET /recommendations/match?startTime=2019-02-18%2011:00:16&endTime=2019-02-20%2011:00:16&company_name=average HTTP/1.1" 200 6457
+2019-02-18 15:16:16 basehttp.py[line:124] INFO "GET /recommendations/histories HTTP/1.1" 200 5925
+2019-02-18 15:16:18 basehttp.py[line:124] INFO "POST /performances/program HTTP/1.1" 200 382
+2019-02-18 15:16:19 basehttp.py[line:124] INFO "GET /recommendations/histories HTTP/1.1" 200 5925
+2019-02-18 15:16:19 basehttp.py[line:124] INFO "POST /performances/program HTTP/1.1" 200 382
+2019-02-18 15:16:21 basehttp.py[line:124] INFO "GET /recommendations/histories HTTP/1.1" 200 5925
+2019-02-18 15:16:22 basehttp.py[line:124] INFO "POST /performances/program HTTP/1.1" 200 382
+2019-02-18 15:16:23 basehttp.py[line:124] INFO "GET /recommendations/histories HTTP/1.1" 200 5925
+2019-02-18 15:16:24 basehttp.py[line:124] INFO "POST /performances/program HTTP/1.1" 200 382
+2019-02-18 15:16:26 basehttp.py[line:124] INFO "GET /recommendations/histories HTTP/1.1" 200 5925
+2019-02-18 15:16:26 basehttp.py[line:124] INFO "POST /performances/program HTTP/1.1" 200 382
+2019-02-18 15:16:37 basehttp.py[line:124] INFO "GET /recommendations/histories HTTP/1.1" 200 5925
+2019-02-18 15:16:43 basehttp.py[line:124] INFO "GET /recommendations/detail HTTP/1.1" 200 16
+2019-02-18 15:16:45 basehttp.py[line:124] INFO "GET /recommendations/program?startTime=2019-02-18%2000:00:45&endTime=2019-02-18%2015:16:45 HTTP/1.1" 200 5079
+2019-02-18 15:16:47 basehttp.py[line:124] INFO "GET /recommendations/detail HTTP/1.1" 200 16
+2019-02-18 15:16:48 basehttp.py[line:124] INFO "GET /recommendations/program?startTime=2019-02-18%2000:00:48&endTime=2019-02-18%2015:16:48 HTTP/1.1" 200 5079
