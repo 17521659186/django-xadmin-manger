@@ -1,8 +1,7 @@
 from datetime import datetime
 
 from django.db import models
-from stdimage.models import StdImageField
-from stdimage.utils import UploadToUUID
+
 
 
 # Create your models here.

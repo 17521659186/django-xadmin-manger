@@ -3,7 +3,6 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from .models import User
 from rest_framework import status
-from utils.check_login import user_permission,user_authentication
 
 # Create your views here.
 
@@ -68,40 +67,6 @@ class UserNameCheckView(APIView):
             return Response({"message": "该用户名已经注册，请勿重复注册"}, status=status.HTTP_400_BAD_REQUEST)
         # 用户名未被占用
         return Response({"message": "ok"}, status=status.HTTP_200_OK)
-#
-# # 用户注册页面
-# class UserRegisterView(APIView):
-#     def post(self,request):
-#         userName = request.data.get("userName")
-#         passWord = request.data.get("passWord")
-#         mobile = request.data.get("mobile")
-#
-#         # 判断用户名密码是否存在
-#         if not userName or not passWord:
-#             return Response({"message": "用户名密码不能为空"}, status=status.HTTP_400_BAD_REQUEST)
-#
-#         # 判断手机号是否存在
-#         if not mobile:
-#             return Response({"message": "手机号是否存在"}, status=status.HTTP_400_BAD_REQUEST)
-#
-#         # 用户注册
-#         try:
-#             userRegister = UserRegister(username=userName,password=passWord,mobile=mobile)
-#             userRegister.save()
-#         except Exception as e:
-#             return Response({"message": "注册失败"}, status=status.HTTP_400_BAD_REQUEST)
-#
-#         return Response({"message": "注册成功"}, status=status.HTTP_200_OK)
-
-# 用户密码修改
-class PasswordModify(APIView):
-    def post(self,request):
-        # 获取参数
-        username = request.data.get("username")
-        password = request.data.get("password")
-        # 参数校验
-
-        pass
 
 
 

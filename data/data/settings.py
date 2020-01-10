@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'data.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-# MYSQLIP = "39.98.163.51"
+
 MYSQLIP = "localhost"
 
 DATABASES = {
@@ -95,7 +95,6 @@ DATABASES = {
         'HOST': MYSQLIP,  # 数据库主机
         'PORT': 3306,  # 数据库端口
         'USER': 'root',  # 数据库用户名
-        # 'PASSWORD': 'glossa_mysql_test',  # 数据库用户密码
         'PASSWORD': '123456',  # 数据库用户密码
         'NAME': 'lancome'  # 数据库名字
     }
@@ -202,19 +201,3 @@ LOGGING = {
         },
     }
 }
-
-TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, "templates")],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-            ],
-        },
-    },
-]
