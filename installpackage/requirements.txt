@@ -12,7 +12,7 @@ django-simpleui==2.1.4.619
 djangorestframework==3.9.4
 et-xmlfile==1.0.1
 future==0.17.1
-httplib2==0.9.2
+httplib2==0.19.0
 idna==2.8
 jdcal==1.4.1
 odfpy==1.4.0
